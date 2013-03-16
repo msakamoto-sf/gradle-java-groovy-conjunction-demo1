@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = 'j1.Main'
+defaultTasks 'clean', 'run'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:1.8.9'
+    testCompile 'junit:junit:4.11'
+}

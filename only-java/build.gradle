@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+mainClassName = 'j1.Main'
+defaultTasks 'clean', 'run'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-lang:commons-lang:20030203.000129'
+    testCompile 'junit:junit:4.11'
+}
